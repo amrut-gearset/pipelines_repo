@@ -84,7 +84,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <actionOverrides>
+    <!--<actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -97,7 +97,7 @@
         <actionName>View</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
-    </actionOverrides>
+    </actionOverrides>-->
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <sharingModel>ControlledByParent</sharingModel>
