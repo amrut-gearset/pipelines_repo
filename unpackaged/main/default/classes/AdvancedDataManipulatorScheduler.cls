@@ -5,5 +5,6 @@ public class AdvancedDataManipulatorScheduler {
         System.schedule('Generate15min', '0 15 * * * ?', new AdvancedDataManipulator());
         System.schedule('Generate30min', '0 30 * * * ?', new AdvancedDataManipulator());
         System.schedule('Generate45min', '0 45 * * * ?', new AdvancedDataManipulator());
+        //Amrut's change
     }
 }
