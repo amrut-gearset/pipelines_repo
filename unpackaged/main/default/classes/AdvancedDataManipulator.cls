@@ -1,3 +1,4 @@
+//Added dummy comments to test the CI validation PR webhook - Try 4
 global class AdvancedDataManipulator implements Schedulable {
 
     Integer AccountCount = 0;
@@ -7,6 +8,7 @@ global class AdvancedDataManipulator implements Schedulable {
     Integer OpportunityCount = 0;
     
     private void GetGlobalDataSetCounts() {
+        System.debug('Inside GetGlobalDataSetCounts method b');
         AccountCount = [SELECT COUNT() FROM Account];
         CaseCount = [SELECT COUNT() FROM Case];
         ContactCount = [SELECT COUNT() FROM Contact];
@@ -19,12 +21,14 @@ global class AdvancedDataManipulator implements Schedulable {
     }
 
     private String GenerateRandomFullName() {
+        System.debug('Inside GenerateRandomFullName method');
         Integer randomInitialIndex = GetRandomNumber(Names.Initials.size() - 1);
         String randomFullName = GenerateRandomFirstName() + ' ' + Names.Initials[randomInitialIndex] + '. ' + GenerateRandomLastName();
         return randomFullName;
     }
 
     private String GenerateRandomFirstName() {
+        System.debug('Inside GenerateRandomFirstName method');
         Integer randomFirstNameIndex = GetRandomNumber(Names.FirstNames.size() - 1);
         return Names.FirstNames[randomFirstNameIndex];
     }
@@ -369,6 +373,7 @@ global class AdvancedDataManipulator implements Schedulable {
     }
     
     global void execute(SchedulableContext ctx) {
+    System.debug('Inside execute method');
         
         GetGlobalDataSetCounts();
         
