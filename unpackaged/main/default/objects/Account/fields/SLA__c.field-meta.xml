@@ -7,6 +7,7 @@
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>Industry</controllingField>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -30,5 +31,29 @@
                 <label>Bronze</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Agriculture</controllingFieldValue>
+            <controllingFieldValue>Apparel</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Bronze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apparel</controllingFieldValue>
+            <controllingFieldValue>Banking</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Gold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apparel</controllingFieldValue>
+            <controllingFieldValue>Banking</controllingFieldValue>
+            <controllingFieldValue>Biotechnology</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banking</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Platinum</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>
